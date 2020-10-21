@@ -9,11 +9,11 @@ public class Snack {
     private int id;
     private String name;
     private int quantity;
-    private float cost;
+    private double cost;
     private int machineId;
 
     // constructor
-    public Snack(String name, int quantity, float cost, int machineId) {
+    public Snack(String name, int quantity, double cost, int machineId) {
         maxId++;
         id = maxId;
 
@@ -33,7 +33,7 @@ public class Snack {
     public int getQuantity() {
         return quantity;
     }
-    public float getCost() {
+    public double getCost() {
         return cost;
     }
     public int getMachineId() {
@@ -50,7 +50,7 @@ public class Snack {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-    public void setCost(float cost) {
+    public void setCost(double cost) {
         this.cost = cost;
     }
     public void setMachineId(int id) {

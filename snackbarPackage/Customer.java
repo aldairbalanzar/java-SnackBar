@@ -7,10 +7,10 @@ public class Customer {
     // fields
     private int id;
     private String name;
-    private float cash;
+    private double cash;
 
     // constructor
-    public Customer(String name, float cash) {
+    public Customer(String name, double cash) {
         maxId++;
 
         id = maxId;
@@ -25,7 +25,7 @@ public class Customer {
     public String getName() {
         return name;
     }
-    public float getCash() {
+    public double getCash() {
         return cash;
     }
 
@@ -33,10 +33,10 @@ public class Customer {
     public void setName(String name) {
         this.name = name;
     }
-    public void addCash(float amount) {
+    public void addCash(double amount) {
         this.cash = this.cash + amount;
     }
-    public void spendCash(float amount) {
+    public void spendCash(double amount) {
         this.cash = this.cash - amount;
     }
 }
